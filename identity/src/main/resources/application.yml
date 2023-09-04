@@ -28,11 +28,11 @@ spring:
           userConsumer-in-0:
             consumer:
               enableDlq: true
-              dlqName: "pub.myapp.ms-app--identity.user.1.error"
+              dlqName: "pub.myapp.ms-app--identity.user.error"
       bindings:
         userConsumer-in-0:
-          destination: "pub.myapp.ms-app--identity.user.1"
-          group: "consumer.group.myapp.ms-app--identity.user.1"
+          destination: "pub.myapp.ms-app--identity.user"
+          group: "consumer.group.myapp.ms-app--identity.user"
           consumer:
             headerMode: none
             maxAttempts: 3
