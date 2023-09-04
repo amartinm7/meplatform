@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/events/common/Base-Event.json/1.0.json#",
+  "properties": {
+    "@id": {
+      "$ref": "../../objects/common/Common-Definitions.json/1.0.json#/definitions/uuidv4",
+      "description": "Unique identifier of the event"
+    },
+    "@type": {
+      "description": "Type of the event, usually this will be the entity which the event refers to",
+      "type": "string"
+    },
+    "actor": {
+      "$ref": "../../objects/common/Actor.json/1.0.json#"
+    },
+    "published": {
+      "$ref": "../../objects/common/Common-Definitions.json/1.0.json#/definitions/date",
+      "description": "The time when the event was created."
+    },
+    "provider": {
+      "$ref": "../../objects/common/Provider.json/1.0.json#"
+    },
+    "schema": {
+      "description": "This field specifies which schema this event should comply to.",
+      "type": "string"
+    },
+    "action": {
+      "description": "This field specifies which schema this event should comply to.",
+      "enum": [
+        "Create",
+        "Update",
+        "Delete",
+        "Read"
+      ]
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "schema",
+    "provider",
+    "published"
+  ],
+  "title": "BaseEvent",
+  "type": "object"
+}

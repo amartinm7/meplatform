@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/common/Integer-Identified-Name-Object.json/1.0.json#",
+  "properties": {
+    "@id": {
+      "description": "id.",
+      "type": "integer"
+    },
+    "name": {
+      "description": "name.",
+      "type": "string"
+    }
+  },
+  "required": [
+    "@id",
+    "name"
+  ],
+  "type": "object"
+}

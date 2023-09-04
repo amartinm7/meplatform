@@ -1,0 +1,80 @@
+[
+  {
+    "id":  "a7d2a603-36ee-400c-9786-4c3cd0ffedc7",
+    "resource_name":  "RESOURCE#1",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "0da4aa3d-23fa-42e4-b27f-35e794a0a661",
+    "resource_name":  "RESOURCE#2",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "5aba43c8-15fc-4355-8dff-af980da28c0c",
+    "resource_name":  "RESOURCE#3",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "cfd51b40-ad3a-47d7-ad72-c5b33548c15c",
+    "resource_name":  "RESOURCE#4",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "7b06c3b5-7570-4c4b-ad3f-18affd17f002",
+    "resource_name":  "RESOURCE#5",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "5d9e2f67-57a8-4959-8cd6-13dfbb4824da",
+    "resource_name":  "RESOURCE#6",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "8f62f364-d4ad-4c58-a12f-e31a96f4f2c8",
+    "resource_name":  "RESOURCE#7",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "0ce145c0-ca13-4954-a977-1bd92d784cc9",
+    "resource_name":  "RESOURCE#8",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "4e03f0a7-8f9c-4628-acf4-210b881d65dc",
+    "resource_name":  "RESOURCE#9",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "5750a390-2245-4fc2-801e-63606769c466",
+    "resource_name":  "RESOURCE#10",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "5dfc99e2-8ae0-4fcb-8093-7d97a1a4a13d",
+    "resource_name":  "RESOURCE#11",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "608a1090-d747-4dc1-b678-6c8bd24206cd",
+    "resource_name":  "RESOURCE#12",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  },
+  {
+    "id":  "e769167e-eebc-4871-b6a2-2640aca48830",
+    "resource_name":  "RESOURCE#13",
+    "user_id":  "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+    "subscription_id":  "fd7cb91e-e95e-4603-9bfc-402ff5a495ec"
+  }
+]

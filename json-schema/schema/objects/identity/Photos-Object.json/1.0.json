@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/identity/Photo-Object.json/1.1.json#",
+  "properties": {
+    "@id": {
+      "description": "Photo id",
+      "type": "string"
+    },
+    "order": {
+      "description": "Photo order",
+      "type": "integer"
+    },
+    "versionId": {
+      "description": "Photo version id",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "@id",
+    "order",
+    "versionId"
+  ],
+  "title": "Photo",
+  "type": "object"
+}

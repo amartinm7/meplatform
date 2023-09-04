@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/common/Login-Object.json/1.0.json#",
+  "allOf": [
+    {
+      "$ref": "../../common/Base-Object.json/1.0.json#"
+    }
+  ],
+  "description": "Definition of Login object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "description": "Status of login attempt",
+      "enum": [
+        "ok",
+        "failed"
+      ]
+    },
+    "message": {
+      "type": "string",
+      "description": "message of login status"
+    },
+    "remoteAddress": {
+      "description": "The IP address of the client",
+      "$ref": "../Common-Definitions.json/1.0.json#/definitions/ipv4"
+    },
+    "remoteUserAgent": {
+      "type": "string",
+      "description": "The device User-Agent of the client"
+    },
+    "userType": {
+      "type": "string",
+      "description": "The user type of the login attempt",
+      "enum": [
+        "user",
+        "client",
+        "internalUser",
+        "impersonation"
+      ]
+    },
+    "crmClientId": {
+      "type": "string",
+      "description": "CRM client identifier"
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "remoteAddress",
+    "remoteUserAgent",
+    "userType"
+  ],
+  "title": "LoginObject",
+  "type": "object"
+}

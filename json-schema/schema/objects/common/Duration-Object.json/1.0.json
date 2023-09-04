@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.my.server.net/objects/common/Duration-Object.json/1.0.json#",
+    "description": "Definition for Period of time",
+    "properties": {
+        "begin_at": {
+            "$ref": "../Common-Definitions.json/1.0.json#/definitions/date",
+            "description": "The date when Begins at. Needs to follow ISO 8601 date format"
+        },
+        "ends_at": {
+            "$ref": "../Common-Definitions.json/1.0.json#/definitions/date",
+            "description": "The date when Ends at. Needs to follow ISO 8601 date format"
+        }
+    },
+    "required": [
+        "begin_at",
+        "ends_at"
+    ],
+    "title": "DurationObject",
+    "type": "object"
+}

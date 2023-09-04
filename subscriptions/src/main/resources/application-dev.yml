@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://database:5432/subscriptions'
+    username: "userdb"
+    password: "passdb"
+    dbname: "subscriptions"
+
+app:
+  ms-provider-cloud-resource.url: http://wiremock:${wiremock.server.port}/api/extprovider/resources

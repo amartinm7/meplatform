@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/identity/Department-Object.json/1.0.json#",
+  "description": "Definition of the Department object",
+  "properties": {
+    "@id": {
+      "description": "department id",
+      "$ref": "../../common/Common-Definitions.json/1.0.json#/definitions/uuidv4"
+    },
+    "name": {
+      "description": "department name",
+      "type": "string"
+    },
+    "term_duration": {
+      "description": "department period of time, duration on the position in the company",
+      "$ref": "../../common/Duration-Object.json/1.0.json"
+    },
+    "at_present": {
+      "description": "current department: true/false",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "@id",
+    "name",
+    "term_duration",
+    "at_present"
+  ],
+  "title": "Department",
+  "type": "object"
+}

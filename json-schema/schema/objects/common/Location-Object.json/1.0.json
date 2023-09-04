@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/identity/Location-Object.json/2.json#",
+  "properties": {
+    "geolocation": {
+      "description": "Geolocation object",
+      "$ref": "../Geolocation-Object.json/1.0.json#"
+    },
+    "zipCode": {
+      "description": "zipcode value",
+      "type": "string"
+    },
+    "locality": {
+      "description": "Locality object",
+      "$ref": "../Simple-Object.json/1.json#"
+    },
+    "province": {
+      "description": "Province object",
+      "$ref": "../Simple-Object.json/1.json#"
+    },
+    "country": {
+      "description": "Country object",
+      "$ref": "../Simple-Object.json/1.json#"
+    }
+  },
+  "required": [
+    "geolocation"
+  ],
+  "title": "Location",
+  "type": "object"
+}

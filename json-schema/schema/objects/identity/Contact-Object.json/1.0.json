@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/identity/Contact-Object.json/1.0.json#",
+  "description": "Definition of the Contact object",
+  "properties": {
+    "first_name": {
+      "description": "first name",
+      "type": "string"
+    },
+    "last_name_1": {
+      "description": "first last name",
+      "type": "string"
+    },
+    "last_name_2": {
+      "description": "second last name2",
+      "type": "string"
+    },
+    "first_phone_number": {
+      "description": "first phone number",
+      "type": "string"
+    },
+    "second_phone_number": {
+      "description": "second phone number",
+      "type": "string"
+    },
+    "email": {
+      "description": "email",
+      "type": "string"
+    },
+  },
+  "required": [
+    "name",
+    "last_name_1",
+    "last_name_2",
+    "first_phone_number",
+    "second_phone_number",
+    "email"
+  ],
+  "type": "object"
+}

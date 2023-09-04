@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Definition of Money Object",
+  "id": "http://schema.my.server.net/objects/common/Money-Object.json/1.0.json#",
+  "properties": {
+    "value": {
+      "type": "integer",
+      "description": "Monetary quantity expressed in cents. E.g. 9,95 € will be expressed as 995."
+    },
+    "currency": {
+      "type": "string",
+      "enum": ["EUR"]
+    }
+  },
+  "required":["value", "currency"],
+  "title":"Money",
+  "type":"object"
+}

@@ -1,0 +1,49 @@
+### open api
+http://localhost:8000/swagger-ui/index.html#/
+
+### Add a new certification
+POST http://localhost:8000/api/v1/certification
+Accept: application/json
+Content-Type: application/json
+Connection: keep-alive
+
+{
+  "id": "b476c4bb-46af-4151-8999-40689ddcd00e",
+  "certificationName": "CERTIFICATION_NAME",
+  "userId": "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+  "subscriptionId": "fd7cb91e-e95e-4603-9bfc-402ff5a495ec",
+  "startDate": "2020-08-18T00:00:00Z",
+  "endDate": "2020-12-18T00:00:00Z",
+  "status": "ACCEPTED"
+}
+
+### UPDATE
+PUT http://localhost:8000/api/v1/certification/b476c4bb-46af-4151-8999-40689ddcd00e
+Content-Type: application/json
+
+{
+  "certificationName": "CERTIFICATION_NAME_X",
+  "userId": "ccb58458-8d3d-4191-b09c-7eb24994e84c",
+  "subscriptionId": "fd7cb91e-e95e-4603-9bfc-402ff5a495ec",
+  "status": "REJECTED",
+  "startDate": "2020-08-18T00:00:00Z",
+  "endDate": "2020-12-18T00:00:00Z"
+}
+
+### GET
+GET http://localhost:8000/api/v1/certification/b476c4bb-46af-4151-8999-40689ddcd00e
+Accept: application/json
+Content-Type: application/json
+
+### DELETE A CERTIFICATION
+DELETE http://localhost:8000/api/v1/certification/b476c4bb-46af-4151-8999-40689ddcd00e
+Accept: application/json
+Content-Type: application/json
+
+### GET ALL CERTIFICATIONS FOR A USER
+GET http://localhost:8000/api/v1/certification?userId=ccb58458-8d3d-4191-b09c-7eb24994e84c&page=0&resultsPerPage=10 \
+--header 'Content-Type: application/json'
+
+### GET ALL CERTIFICATIONS FOR A USER
+GET http://localhost:8000/api/v1/certification?userId=ccb58458-8d3d-4191-b09c-7eb24994e84c&page=0&resultsPerPage=10 \
+--header 'Content-Type: application/json'

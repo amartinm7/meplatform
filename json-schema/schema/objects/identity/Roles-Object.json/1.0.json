@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/identity/Roles-Object.json/1.0.json#",
+  "description": "Definition of the Role object",
+  "properties": {
+    "@id": {
+      "description": "role id",
+      "$ref": "../../common/Common-Definitions.json/1.0.json#/definitions/uuidv4"
+    },
+    "name": {
+      "description": "role name",
+      "type": "string"
+    }
+  },
+  "required": [
+    "@id",
+    "name"
+  ],
+  "type": "object"
+}

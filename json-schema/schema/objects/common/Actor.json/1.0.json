@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/common/Actor.json/1.0.json#",
+  "description": "A representation of an actor based on the common properties of Person and Organization.",
+  "additionalProperties": false,
+  "properties": {
+    "@id": {
+      "description": "This is the account ID of a logged-in user. This field does not present in the data when the actor is not a logged-in user or not a user. The section after sdrn specifies the login system. The login realms are 'spid.no' for SPiD Norway, 'schibsted.com' for SPiD Sweden and global, 'leboncoin.fr' for Leboncoin, 'tori.fi' for Tori. Other login systems can be indicated with a custom string. The string is normally the login domain, e.g. 'coches.com', 'subito.it'. If a login system is used on multiple domains, please choose one single realm name to make sure that it is aligned on the different domains.",
+      "pattern": "sdrn:[^:]+:[^:]+:[^:]+$",
+      "type": "string"
+    },
+    "remoteAddress": {
+      "description": "The IP address of the client",
+      "$ref": "../Common-Definitions.json/1.0.json#/definitions/ipv4"
+    },
+    "remoteUserAgent": {
+      "type": "string",
+      "description": "The device User-Agent of the client"
+    }
+  },
+  "required": [
+    "@id"
+  ],
+  "title": "Actor",
+  "type": "object"
+}

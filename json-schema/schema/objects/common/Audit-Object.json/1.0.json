@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/common/Audit-Object.json/1.0.json#",
+  "properties": {
+    "created_at": {
+      "$ref": "../Common-Definitions.json/1.0.json#/definitions/date",
+      "description": "Creation date. Needs to follow ISO 8601 date format"
+    },
+    "modified_at": {
+      "$ref": "../Common-Definitions.json/1.0.json#/definitions/date",
+      "description": "Modification date. Needs to follow ISO 8601 date format"
+    }
+  },
+  "required": [
+    "created_at",
+    "modified_at"
+  ],
+  "title": "Audit",
+  "type": "object"
+}

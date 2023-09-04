@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.my.server.net/objects/identity/Geolocation-Object.json/1.1.json#",
+  "properties": {
+    "latitude": {
+      "description": "Geolocation latitude.",
+      "type": "number"
+    },
+    "longitude": {
+      "description": "Geolocation longitude.",
+      "type": "number"
+    }
+  },
+  "required": [
+    "latitude",
+    "longitude"
+  ],
+  "title": "Geolocation",
+  "type": "object"
+}

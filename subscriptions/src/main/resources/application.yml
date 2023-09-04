@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: meplatform-certs
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/subscriptions'
+    username: "userdb"
+    password: "passdb"
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  docker:
+    compose:
+      file: "./subscriptions/docker-compose.yml"
+      lifecycle-management: "start-and-stop"
+
+wiremock:
+  server:
+    port: 8090
+
+server:
+  port: 8000
+  compression:
+    enabled: true
+    mime-types: application/json
+
+app:
+  ms-provider-cloud-resource.url: http://localhost:${wiremock.server.port}/api/extprovider/resources
+  scheduler:
+    cloud_resource:
+      enabled: true
+      scheduled: "0 0/1 * * * ?"
+      shedlock:
+        lockAtLeast: PT14S
+        lockAtMost: PT15S

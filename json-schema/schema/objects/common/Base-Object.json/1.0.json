@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://schema.my.server.net/objects/common/Base-Object.json/1.0.json#",
+    "description": "The ancestor to all content objects",
+    "properties": {
+        "@id": {
+            "description": "The ID of the object",
+            "type": "string"
+        }
+    },
+    "required": [
+        "@id"
+    ],
+    "title": "BaseObject",
+    "type": "object"
+}

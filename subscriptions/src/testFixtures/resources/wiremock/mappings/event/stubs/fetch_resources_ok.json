@@ -1,0 +1,13 @@
+{
+  "request": {
+    "url": "/api/extprovider/resources",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "resources.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

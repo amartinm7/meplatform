@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost:8080/events/identity/UserCreated-Event.json/1.0.json#",
+  "allOf": [
+    {
+      "$ref": "../../common/Base-Event.json/1.0.json#"
+    }
+  ],
+  "description": "User created event",
+  "properties": {
+    "user": {
+      "description": "User created properties",
+      "properties": {
+        "@id": {
+          "type": "string",
+          "description": "User id"
+        },
+        "roles": {
+          "$ref": "../../../objects/identity/Roles-Object.json/1.0.json",
+          "description": "user role list",
+          "type": "array"
+        },
+        "contact": {
+          "$ref": "../../../objects/identity/Contact-Object.json/1.0.json",
+          "description": "Contact details"
+        },
+        "department": {
+          "$ref": "../../../objects/identity/Department-Object.json/1.0.json",
+          "description": "Department",
+          "type": "array"
+        },
+        "location": {
+          "$ref": "../../../objects/common/Location-Object.json/1.0.json",
+          "description": "Location"
+        },
+        "photos": {
+          "$ref": "../../../objects/identity/Photos-Object.json/1.0.json",
+          "description": "Photos",
+          "type": "array"
+        },
+        "audit": {
+          "$ref": "../../../objects/common/Audit-Object.json/1.0.json",
+          "description": "Audit"
+        }
+      },
+      "required": [
+        "@id",
+        "roles",
+        "contact",
+        "department",
+        "location",
+        "photos",
+        "audit"
+      ]
+    }
+  },
+  "required": [
+    "user"
+  ],
+  "title": "UserCreated",
+  "type": "object"
+}
