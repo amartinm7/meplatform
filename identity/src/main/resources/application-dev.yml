@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: "kafka_broker.com:9094"
+          configuration:
+            sasl.jaas.config: 'org.apache.kafka.common.security.scram.ScramLoginModule required username="${kafka.sasl.jaas.config.user}" password="${kafka.sasl.jaas.config.password}";'
+            sasl.mechanism: 'SCRAM-SHA-256'
+            security.protocol: 'SASL_SSL'
+  datasource:
+    url: 'jdbc:postgresql://identity.url.com:5432/identity'
+    driver-class-name: org.postgresql.Driver
+    username: userdb
+    password: "{cipher}AAAAAAA...cipher.pass.use.kms.or.similar.to.dencrypt"
+  requester-authorization:
+    basic:
+      superuser:
+        credentials:
+          user: superuser
+          password: "{cipher}AAAAAAA...cipher.pass.use.kms.or.similar.to.dencrypt"
+
+kafka.sasl.jaas.config:
+  user: "msswridentity"
+  password: "{cipher}AAAAAAA...cipher.pass.use.kms.or.similar.to.dencrypt"

@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: fever
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/identity'
+    username: "userdb"
+    password: "passdb"
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  docker:
+    compose:
+      file: "./identity/docker-compose.yml"
+      lifecycle-management: "start-and-stop"
+  cloud:
+    stream:
+      function:
+        definition: userConsumer
+      kafka:
+        binder:
+          brokers: localhost
+          auto-add-partitions: false
+          auto-create-topics: false
+        bindings:
+          userConsumer-in-0:
+            consumer:
+              enableDlq: true
+              dlqName: "pub.myapp.ms-app--identity.user.1.error"
+      bindings:
+        userConsumer-in-0:
+          destination: "pub.myapp.ms-app--identity.user.1"
+          group: "consumer.group.myapp.ms-app--identity.user.1"
+          consumer:
+            headerMode: none
+            maxAttempts: 3
+            partitioned: true
+            concurrency: 5
+  requester-authorization:
+    basic:
+      superuser:
+        credentials:
+          user: superuser
+          password: superuser
